@@ -1,0 +1,43 @@
+strlen.c: In function ‘main’:
+strlen.c:27:13: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   27 |         h = malloc(30);
+      |             ^~~~~~
+strlen.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+strlen.c:27:13: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   27 |         h = malloc(30);
+      |             ^~~~~~
+strlen.c:27:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+strlen.c:29:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   29 |         printf("h=%s\n", h);
+      |         ^~~~~~
+strlen.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+strlen.c:29:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   29 |         printf("h=%s\n", h);
+      |         ^~~~~~
+strlen.c:29:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+strlen.c:30:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   30 |         printf("l=%d\n", mystrlen(h));
+      |                   ~^     ~~~~~~~~~~~
+      |                    |     |
+      |                    int   long int
+      |                   %ld
+strlen.c:33:9: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]
+   33 |         strcpy(g, "This is a great course");
+      |         ^~~~~~
+strlen.c:1:1: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+  +++ |+#include <string.h>
+    1 | 
+strlen.c:33:9: warning: incompatible implicit declaration of built-in function ‘strcpy’ [-Wbuiltin-declaration-mismatch]
+   33 |         strcpy(g, "This is a great course");
+      |         ^~~~~~
+strlen.c:33:9: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’
+strlen.c:35:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   35 |         printf("l=%d\n", mystrlen(g));
+      |                   ~^     ~~~~~~~~~~~
+      |                    |     |
+      |                    int   long int
+      |                   %ld

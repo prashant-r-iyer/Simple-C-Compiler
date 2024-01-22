@@ -1,0 +1,11 @@
+rel.c: In function ‘main’:
+rel.c:4:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    4 |         printf("9>8=%d\n", 9<8);
+      |         ^~~~~~
+rel.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+rel.c:4:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    4 |         printf("9>8=%d\n", 9<8);
+      |         ^~~~~~
+rel.c:4:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

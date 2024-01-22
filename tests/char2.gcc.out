@@ -1,0 +1,21 @@
+char2.c: In function ‘main’:
+char2.c:7:13: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+    7 |         h = malloc(20);
+      |             ^~~~~~
+char2.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+char2.c:7:13: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+    7 |         h = malloc(20);
+      |             ^~~~~~
+char2.c:7:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+char2.c:12:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   12 |         printf("h=%s\n", h);
+      |         ^~~~~~
+char2.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+char2.c:12:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   12 |         printf("h=%s\n", h);
+      |         ^~~~~~
+char2.c:12:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

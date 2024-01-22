@@ -1,0 +1,27 @@
+sum.c: In function ‘main’:
+sum.c:14:13: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   14 |         a = malloc(5*8);
+      |             ^~~~~~
+sum.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+sum.c:14:13: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   14 |         a = malloc(5*8);
+      |             ^~~~~~
+sum.c:14:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+sum.c:21:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   21 |         printf("sum=%d\n", s);
+      |         ^~~~~~
+sum.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+sum.c:21:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   21 |         printf("sum=%d\n", s);
+      |         ^~~~~~
+sum.c:21:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+sum.c:21:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   21 |         printf("sum=%d\n", s);
+      |                     ~^     ~
+      |                      |     |
+      |                      int   long int
+      |                     %ld

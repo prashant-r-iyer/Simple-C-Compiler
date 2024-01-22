@@ -1,0 +1,23 @@
+expr2.c: In function ‘main’:
+expr2.c:17:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   17 |         printf("j=%d g=%d\n", j, g);
+      |         ^~~~~~
+expr2.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+expr2.c:17:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   17 |         printf("j=%d g=%d\n", j, g);
+      |         ^~~~~~
+expr2.c:17:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+expr2.c:17:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   17 |         printf("j=%d g=%d\n", j, g);
+      |                   ~^          ~
+      |                    |          |
+      |                    int        long int
+      |                   %ld
+expr2.c:17:25: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long int’ [-Wformat=]
+   17 |         printf("j=%d g=%d\n", j, g);
+      |                        ~^        ~
+      |                         |        |
+      |                         int      long int
+      |                        %ld

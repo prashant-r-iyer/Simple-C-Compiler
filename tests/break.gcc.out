@@ -1,0 +1,51 @@
+break.c: In function ‘main’:
+break.c:10:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   10 |                 printf("i=%d\n", i);
+      |                 ^~~~~~
+break.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+break.c:10:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   10 |                 printf("i=%d\n", i);
+      |                 ^~~~~~
+break.c:10:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+break.c:10:28: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   10 |                 printf("i=%d\n", i);
+      |                           ~^     ~
+      |                            |     |
+      |                            int   long int
+      |                           %ld
+break.c:12:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   12 |         printf("for i=%d\n", i);
+      |         ^~~~~~
+break.c:12:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+break.c:12:24: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   12 |         printf("for i=%d\n", i);
+      |                       ~^     ~
+      |                        |     |
+      |                        int   long int
+      |                       %ld
+break.c:16:28: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   16 |                 printf("i=%d\n", i);
+      |                           ~^     ~
+      |                            |     |
+      |                            int   long int
+      |                           %ld
+break.c:24:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   24 |         printf("while i=%d\n", i);
+      |                         ~^     ~
+      |                          |     |
+      |                          int   long int
+      |                         %ld
+break.c:28:28: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   28 |                 printf("i=%d\n", i);
+      |                           ~^     ~
+      |                            |     |
+      |                            int   long int
+      |                           %ld
+break.c:38:29: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   38 |         printf("do/while i=%d\n", i);
+      |                            ~^     ~
+      |                             |     |
+      |                             int   long int
+      |                            %ld

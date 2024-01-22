@@ -1,0 +1,17 @@
+return.c: In function ‘main’:
+return.c:12:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   12 |         printf("sum=%d\n", f);
+      |         ^~~~~~
+return.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+return.c:12:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   12 |         printf("sum=%d\n", f);
+      |         ^~~~~~
+return.c:12:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+return.c:12:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   12 |         printf("sum=%d\n", f);
+      |                     ~^     ~
+      |                      |     |
+      |                      int   long int
+      |                     %ld

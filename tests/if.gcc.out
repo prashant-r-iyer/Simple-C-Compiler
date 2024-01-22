@@ -1,0 +1,35 @@
+if.c: In function ‘main’:
+if.c:5:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    5 |                 printf("OK1\n");
+      |                 ^~~~~~
+if.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+if.c:5:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    5 |                 printf("OK1\n");
+      |                 ^~~~~~
+if.c:5:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+if.c:9:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |                 printf("OK2\n");
+      |                 ^~~~~~
+if.c:9:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+if.c:13:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   13 |                 printf("OK3\n");
+      |                 ^~~~~~
+if.c:13:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+if.c:16:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   16 |                 printf("OK4\n");
+      |                 ^~~~~~
+if.c:16:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+if.c:20:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   20 |                 printf("OK5\n");
+      |                 ^~~~~~
+if.c:20:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+if.c:23:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   23 |                 printf("OK6\n");
+      |                 ^~~~~~
+if.c:23:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+if.c:26:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   26 |         printf("OK7\n");
+      |         ^~~~~~
+if.c:26:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

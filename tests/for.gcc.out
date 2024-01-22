@@ -1,0 +1,21 @@
+for.c: In function ‘main’:
+for.c:7:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    7 |                 printf("i=%d\n", i);
+      |                 ^~~~~~
+for.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+for.c:7:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    7 |                 printf("i=%d\n", i);
+      |                 ^~~~~~
+for.c:7:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+for.c:7:28: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    7 |                 printf("i=%d\n", i);
+      |                           ~^     ~
+      |                            |     |
+      |                            int   long int
+      |                           %ld
+for.c:10:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   10 |         printf("OK\n");
+      |         ^~~~~~
+for.c:10:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

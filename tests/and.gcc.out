@@ -1,0 +1,11 @@
+and.c: In function ‘main’:
+and.c:4:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    4 |         printf("0 && 0 = %d\n", 0 && 0);
+      |         ^~~~~~
+and.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+and.c:4:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    4 |         printf("0 && 0 = %d\n", 0 && 0);
+      |         ^~~~~~
+and.c:4:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

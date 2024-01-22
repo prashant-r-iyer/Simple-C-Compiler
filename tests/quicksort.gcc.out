@@ -1,0 +1,37 @@
+quicksort.c: In function ‘printArray’:
+quicksort.c:6:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    6 |                 printf("%d\n", a[i]);
+      |                 ^~~~~~
+quicksort.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+quicksort.c:6:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    6 |                 printf("%d\n", a[i]);
+      |                 ^~~~~~
+quicksort.c:6:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+quicksort.c:6:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    6 |                 printf("%d\n", a[i]);
+      |                         ~^     ~~~~
+      |                          |      |
+      |                          int    long int
+      |                         %ld
+quicksort.c: In function ‘print’:
+quicksort.c:11:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   11 |         printf("==%s==\n", s);
+      |         ^~~~~~
+quicksort.c:11:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+quicksort.c: In function ‘main’:
+quicksort.c:66:13: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   66 |         a = malloc(n*8);
+      |             ^~~~~~
+quicksort.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+quicksort.c:66:13: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   66 |         a = malloc(n*8);
+      |             ^~~~~~
+quicksort.c:66:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+quicksort.c:79:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   79 |         printf("-------- Before -------\n");
+      |         ^~~~~~
+quicksort.c:79:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

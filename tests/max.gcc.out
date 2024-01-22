@@ -1,0 +1,49 @@
+max.c: In function ‘main’:
+max.c:25:13: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   25 |         a = malloc(10*8);
+      |             ^~~~~~
+max.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+max.c:25:13: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   25 |         a = malloc(10*8);
+      |             ^~~~~~
+max.c:25:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+max.c:39:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   39 |                 printf("%d: %d\n", i, a[i]);
+      |                 ^~~~~~
+max.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+max.c:39:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   39 |                 printf("%d: %d\n", i, a[i]);
+      |                 ^~~~~~
+max.c:39:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+max.c:39:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   39 |                 printf("%d: %d\n", i, a[i]);
+      |                         ~^         ~
+      |                          |         |
+      |                          int       long int
+      |                         %ld
+max.c:39:30: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long int’ [-Wformat=]
+   39 |                 printf("%d: %d\n", i, a[i]);
+      |                             ~^        ~~~~
+      |                              |         |
+      |                              int       long int
+      |                             %ld
+max.c:42:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   42 |         printf("n=%d\n", n);
+      |         ^~~~~~
+max.c:42:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+max.c:42:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   42 |         printf("n=%d\n", n);
+      |                   ~^     ~
+      |                    |     |
+      |                    int   long int
+      |                   %ld
+max.c:43:22: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   43 |         printf("max=%d\n", max(a,n));
+      |                     ~^     ~~~~~~~~
+      |                      |     |
+      |                      int   long int
+      |                     %ld

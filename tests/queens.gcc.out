@@ -1,0 +1,24 @@
+queens.c:4:6: warning: conflicting types for built-in function ‘abs’; expected ‘int(int)’ [-Wbuiltin-declaration-mismatch]
+    4 | long abs(long v) {
+      |      ^~~
+queens.c:1:1: note: ‘abs’ is declared in header ‘<stdlib.h>’
+  +++ |+#include <stdlib.h>
+    1 | long* queens;
+queens.c: In function ‘bruteforce’:
+queens.c:25:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   25 |     printf("Solution #%2ld = [ ", solid);
+      |     ^~~~~~
+queens.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | long* queens;
+queens.c:25:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   25 |     printf("Solution #%2ld = [ ", solid);
+      |     ^~~~~~
+queens.c:25:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+queens.c: In function ‘main’:
+queens.c:47:12: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   47 |   queens = malloc(8*8);
+      |            ^~~~~~
+queens.c:47:12: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+queens.c:47:12: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+queens.c:47:12: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’

@@ -1,0 +1,23 @@
+ampersand.c: In function ‘main’:
+ampersand.c:11:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   11 |         printf("a=%d\n", a);
+      |         ^~~~~~
+ampersand.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+ampersand.c:11:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   11 |         printf("a=%d\n", a);
+      |         ^~~~~~
+ampersand.c:11:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+ampersand.c:11:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   11 |         printf("a=%d\n", a);
+      |                   ~^     ~
+      |                    |     |
+      |                    int   long int
+      |                   %ld
+ampersand.c:13:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   13 |         printf("a=%d\n", a);
+      |                   ~^     ~
+      |                    |     |
+      |                    int   long int
+      |                   %ld

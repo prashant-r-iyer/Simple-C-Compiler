@@ -1,0 +1,17 @@
+global.c: In function ‘main’:
+global.c:7:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    7 |         printf("g=%d\n", g);
+      |         ^~~~~~
+global.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+global.c:7:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    7 |         printf("g=%d\n", g);
+      |         ^~~~~~
+global.c:7:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+global.c:7:20: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    7 |         printf("g=%d\n", g);
+      |                   ~^     ~
+      |                    |     |
+      |                    int   long int
+      |                   %ld

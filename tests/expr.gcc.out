@@ -1,0 +1,14 @@
+expr.c: In function ‘main’:
+expr.c:4:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    4 |         printf("((3*4)/2+9-7)%9=%d\n", ( (3*4)/2+9 - 7)%9);
+      |         ^~~~~~
+expr.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+expr.c:4:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    4 |         printf("((3*4)/2+9-7)%9=%d\n", ( (3*4)/2+9 - 7)%9);
+      |         ^~~~~~
+expr.c:4:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+expr.c:4:32: warning: unknown conversion type character ‘=’ in format [-Wformat=]
+    4 |         printf("((3*4)/2+9-7)%9=%d\n", ( (3*4)/2+9 - 7)%9);
+      |                                ^

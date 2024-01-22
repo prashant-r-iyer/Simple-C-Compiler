@@ -1,0 +1,28 @@
+bubblesort.c: In function ‘printArray’:
+bubblesort.c:19:9: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+   19 |         printf("----------- %s -----------\n", s);
+      |         ^~~~~~
+bubblesort.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+bubblesort.c:19:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   19 |         printf("----------- %s -----------\n", s);
+      |         ^~~~~~
+bubblesort.c:19:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+bubblesort.c:21:26: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+   21 |                 printf("%d\n", a[i]);
+      |                         ~^     ~~~~
+      |                          |      |
+      |                          int    long int
+      |                         %ld
+bubblesort.c: In function ‘main’:
+bubblesort.c:31:13: warning: implicit declaration of function ‘malloc’ [-Wimplicit-function-declaration]
+   31 |         a = malloc(n*8);
+      |             ^~~~~~
+bubblesort.c:1:1: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’
+  +++ |+#include <stdlib.h>
+    1 | 
+bubblesort.c:31:13: warning: incompatible implicit declaration of built-in function ‘malloc’ [-Wbuiltin-declaration-mismatch]
+   31 |         a = malloc(n*8);
+      |             ^~~~~~
+bubblesort.c:31:13: note: include ‘<stdlib.h>’ or provide a declaration of ‘malloc’

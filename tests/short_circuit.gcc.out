@@ -1,0 +1,37 @@
+short_circuit.c: In function ‘f1’:
+short_circuit.c:2:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    2 |     printf("First function\n");
+      |     ^~~~~~
+short_circuit.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | long f1() {
+short_circuit.c:2:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    2 |     printf("First function\n");
+      |     ^~~~~~
+short_circuit.c:2:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+short_circuit.c: In function ‘f2’:
+short_circuit.c:7:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    7 |     printf("Second function\n");
+      |     ^~~~~~
+short_circuit.c:7:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+short_circuit.c: In function ‘main’:
+short_circuit.c:13:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   13 |         printf("Or passed\n");
+      |         ^~~~~~
+short_circuit.c:13:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+short_circuit.c:16:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   16 |         printf("Or failed\n");
+      |         ^~~~~~
+short_circuit.c:16:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+short_circuit.c:20:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   20 |         printf("And passed\n");
+      |         ^~~~~~
+short_circuit.c:20:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+short_circuit.c:23:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   23 |         printf("And failed\n");
+      |         ^~~~~~
+short_circuit.c:23:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+short_circuit.c:26:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   26 |     printf("End\n");
+      |     ^~~~~~
+short_circuit.c:26:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’

@@ -1,0 +1,47 @@
+sixargs.c: In function ‘printall’:
+sixargs.c:2:5: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    2 |     printf("%d\n", a);
+      |     ^~~~~~
+sixargs.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | void printall(long a, long b, long c, long d, long e, long f) {
+sixargs.c:2:5: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    2 |     printf("%d\n", a);
+      |     ^~~~~~
+sixargs.c:2:5: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+sixargs.c:2:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    2 |     printf("%d\n", a);
+      |             ~^     ~
+      |              |     |
+      |              int   long int
+      |             %ld
+sixargs.c:3:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    3 |     printf("%d\n", b);
+      |             ~^     ~
+      |              |     |
+      |              int   long int
+      |             %ld
+sixargs.c:4:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    4 |     printf("%d\n", c);
+      |             ~^     ~
+      |              |     |
+      |              int   long int
+      |             %ld
+sixargs.c:5:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    5 |     printf("%d\n", d);
+      |             ~^     ~
+      |              |     |
+      |              int   long int
+      |             %ld
+sixargs.c:6:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    6 |     printf("%d\n", e);
+      |             ~^     ~
+      |              |     |
+      |              int   long int
+      |             %ld
+sixargs.c:7:14: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    7 |     printf("%d\n", f);
+      |             ~^     ~
+      |              |     |
+      |              int   long int
+      |             %ld

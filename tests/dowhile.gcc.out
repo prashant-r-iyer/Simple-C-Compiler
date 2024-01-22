@@ -1,0 +1,21 @@
+dowhile.c: In function ‘main’:
+dowhile.c:9:17: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+    9 |                 printf("i=%d\n", i);
+      |                 ^~~~~~
+dowhile.c:1:1: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+  +++ |+#include <stdio.h>
+    1 | 
+dowhile.c:9:17: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+    9 |                 printf("i=%d\n", i);
+      |                 ^~~~~~
+dowhile.c:9:17: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
+dowhile.c:9:28: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+    9 |                 printf("i=%d\n", i);
+      |                           ~^     ~
+      |                            |     |
+      |                            int   long int
+      |                           %ld
+dowhile.c:14:9: warning: incompatible implicit declaration of built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+   14 |         printf("OK\n");
+      |         ^~~~~~
+dowhile.c:14:9: note: include ‘<stdio.h>’ or provide a declaration of ‘printf’
